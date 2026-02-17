@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PADA - Posthumous Archives of a Defiant Architect</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+	<script defer src="app.js"></script>
+	<script defer src="noisebg.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<header>
+		<div class="header-inner">
+			<a href="/"><b>P.A.D.A.</b></a>
+		</div>
+	</header>
+	<div class="body-inner">
+		<insert></insert>
+	</div>
+	<canvas></canvas>
+</body>
+<svg>
+	<filter id="paper">
+		<feTurbulence baseFrequency="0.055" numOctaves="4" seed="10" type="fractalNoise" result="d42d511e-9bad-4bb2-8442-6e170a0ebef1"></feTurbulence>
+		<feDisplacementMap scale="30" result="ca53054b-8680-4f7f-ae17-d93ca58bb45d" in="SourceGraphic" in2="d42d511e-9bad-4bb2-8442-6e170a0ebef1"></feDisplacementMap>
+	</filter>
+	<filter id="paper2">
+		<feTurbulence baseFrequency="0.055" numOctaves="4" seed="10" type="fractalNoise" result="d42d511e-9bad-4bb2-8442-6e170a0ebef1"></feTurbulence>
+		<feDisplacementMap scale="5" result="ca53054b-8680-4f7f-ae17-d93ca58bb45d" in="SourceGraphic" in2="d42d511e-9bad-4bb2-8442-6e170a0ebef1"></feDisplacementMap>
+	</filter>
+</svg>
+</html>
