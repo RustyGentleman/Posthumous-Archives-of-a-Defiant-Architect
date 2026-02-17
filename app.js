@@ -3,7 +3,7 @@ document.querySelectorAll('insert').forEach(insert => {
 	let file = ''
 	if (insert.dataset.file)
 		file = insert.dataset.file
-	else switch(location.pathname) {
+	else switch(location.pathname.match(/\/[^/]*$/)[0]) {
 		case '/':
 		case '/index.html':
 			file = 'home.md'
