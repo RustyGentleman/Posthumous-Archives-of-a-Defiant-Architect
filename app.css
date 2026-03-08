@@ -283,6 +283,26 @@ body::after {
   left: -1em;
   border-radius: 35%;
 }
+#table #gb {
+  display: block;
+  filter: brightness(0.3);
+  position: absolute;
+  transform: translate(23em, 25em) rotate(35deg);
+  text-align: center;
+}
+#table #gb span {
+  position: absolute;
+  display: inline-block;
+  color: white;
+  font-size: 1.5em;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-46%);
+  text-shadow: none;
+}
+#table #gb img {
+  height: 15em;
+}
 
 .spoiler {
   background: currentColor;
